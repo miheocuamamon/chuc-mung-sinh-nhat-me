@@ -7,10 +7,10 @@
     box-sizing: border-box;
 }
 :root{
-    --color-green: #d5f5e4;
+    --color-green: #ffc1cc;
     --color-white: #fff;
     --color-black: #333;
-    --color-text-green: #32c576;
+    --color-text-green: #ff93ab;
     --color-heart: #f3f1f1;
     --color-bg-letter: #0d61e0;
     --color-border: #DACCBF;
@@ -845,7 +845,7 @@ body {
 }
 .boxMail .boxMail-container:hover{
     transform: rotate(-5deg);
-    filter: drop-shadow(0 0 10px #4b8d54);
+    filter: drop-shadow(0 0 10px #ff93ab);
 }
 .boxMail .boxMail-container:hover .card1{
     transform: translate(-187px, -250px) rotateY(-140deg);
@@ -864,7 +864,7 @@ body {
     position: absolute;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to right, #4b8d54, #4b8d54 63%);
+    background: linear-gradient(to right, #ff93ab, #ff93ab 63%);
     color: white;
     display: flex;
     justify-content: center;
@@ -921,7 +921,7 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: #4b8d54;
+    background-color: #ff93ab;
     transition: all 1s;
     overflow: hidden;
     font-family: "Inter", serif;
@@ -937,7 +937,7 @@ body {
     opacity: 0;
     visibility: hidden;
     font-size: 25px;
-    text-shadow: 0 0 8px #4b8d54;
+    text-shadow: 0 0 8px #ff93ab;
 }
 .boxMail .boxMail-container .card2:hover h3 {
     animation: texth3 3s forwards;
