@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Ngày Đặc Biệt Của Moa Moa!">
     <meta name="github" content="https://github.com/Aoudumber-Bade">
     <title>Sinh Nhật Của Mẹ</title>
@@ -127,8 +124,8 @@
             <div class="boxMail-container">
                 <div class="card2">
                     <div class="card2-content">
-                        <h3>Hi Mẹ</h3>
-                        <h2> [In Progress...]
+                        <h3>Hello mommy iu dấu, mặt mommy như con gấu của Mi Heo!</h3>
+                        <h2 id="thư_gửi_mẹ"></h2>
                             <div class="quote">
                                 --"Lửa thử vàng, gian nan thử sức"
                             </div>
@@ -144,7 +141,8 @@
 </body>
 <script>
     let datetxt = "Ngày 12 Tháng 8";
-    let datatxtletter = ""
+    let datatxtletter = "";
+    let la_thu_danh_cho_me = "";
     let titleLetter = "To you";
     let charArrDate = datetxt.split('');
     let charArrDateLetter = datatxtletter.split('');
@@ -154,6 +152,15 @@
     let currentIndexTitle = 0;
     let date__of__birth = document.querySelector(".date__of__birth span");
     let text__letter = document.querySelector(".text__letter p");
+
+    // Fetch the content of la_thu_danh_cho_me.txt and assign it to the la_thu_danh_cho_me variable
+    fetch("la_thu_danh_cho_me.txt")
+    .then(response => response.text())
+    .then(data => {
+        la_thu_danh_cho_me = data;
+    });
+
+    // After a delay of 12 seconds, start displaying the date character by character
     setTimeout(function () {
         timeDatetxt = setInterval(function () {
             if (currentIndex < charArrDate.length) {
@@ -235,6 +242,9 @@
     mailBox.onclick = function () {
         mailBox.classList.toggle('active')
         boxmail.classList.add('active')
+
+        document.querySelector("#thư_gửi_mẹ").innerHTML =
+        la_thu_danh_cho_me.replace(/\n/g, "<br>");
     }
 
     function closeLetterAndGo() {
