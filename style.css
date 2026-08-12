@@ -12,7 +12,7 @@
     --color-black: #333;
     --color-text-green: #ff93ab;
     --color-heart: #f3f1f1;
-    --color-bg-letter: #0d61e0;
+    --color-bg-letter: #c70de0;
     --color-border: #DACCBF;
 }
 html{
@@ -259,6 +259,7 @@ body {
     overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 6px solid var(--color-black);
 }
 .content .right .image img{
@@ -356,7 +357,7 @@ body {
     position: absolute;
     top: 170px;
     right: -65px;
-    z-index: -1;
+    z-index: 1;
     transform: rotate(10deg);
     animation: balloon2 2s infinite linear;
 }
