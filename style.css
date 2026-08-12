@@ -825,6 +825,12 @@ body.fade-out {
     color: #fff;
 }
 
+#thư_gửi_mẹ {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
 .boxMail{
     position: fixed;
     background: rgb(0, 0, 0, 0.8);
@@ -860,7 +866,7 @@ body.fade-out {
     transform: rotate(-5deg);
     filter: drop-shadow(0 0 10px #ff93ab);
 }
-.boxMail .boxMail-container:hover .card1{
+.boxMail .boxMail-container.opened .card1{
     transform: translate(-187px, -250px) rotateY(-140deg);
 }
 .boxMail .boxMail-container .card1,
@@ -952,7 +958,7 @@ body.fade-out {
     font-size: 25px;
     text-shadow: 0 0 8px #ff93ab;
 }
-.boxMail .boxMail-container .card2:hover h3 {
+.boxMail .boxMail-container.opened .card2 h3 {
     animation: texth3 3s forwards;
     animation-delay: 2s;
     transition: 1s;
@@ -982,8 +988,8 @@ body.fade-out {
 }
 
 
-.boxMail .boxMail-container .card2:hover h2,
-.boxMail .boxMail-container .card2:hover .quote{
+.boxMail .boxMail-container.opened .card2 h2,
+.boxMail .boxMail-container.opened .card2 .quote{
     animation: texth2 2s forwards;
     animation-delay: 4s;
 }

@@ -242,7 +242,9 @@
     mailBox.onclick = function () {
         mailBox.classList.toggle('active')
         boxmail.classList.add('active')
-
+        document
+            .querySelector('.boxMail-container')
+            .classList.add('opened');
         document.querySelector("#thư_gửi_mẹ").innerHTML =
         la_thu_danh_cho_me.replace(/\n/g, "<br>");
     }
