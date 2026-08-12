@@ -237,9 +237,22 @@
         boxmail.classList.add('active')
     }
 
-    close.addEventListener('click', function () {
-        boxmail.classList.remove('active')
-    })
+    function closeLetter() {
+    boxmail.classList.remove('active');
+
+    // redirect to another page
+    setTimeout(() => {
+        window.location.href = "cake.html";
+    }, 300);
+}
+
+    close.addEventListener('click', closeLetter);
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            closeLetter();
+        }
+    });
 </script>
 
 </html>
