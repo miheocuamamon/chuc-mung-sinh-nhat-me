@@ -853,8 +853,8 @@ body.fade-out {
 }
 .boxMail .boxMail-container{
     position: absolute;
-    width: 1500px;
-    height: 500px;
+    width: min(1500, calc(100vw - 40px));;
+    height: min(600px, calc(100vw - 40px));;
     display: flex;
     margin: 0;
     transform: scale(0.9);
